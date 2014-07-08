@@ -39,7 +39,6 @@ body {
   font-size: 100%; }
 
 body {
-  background: white;
   color: #222222;
   padding: 0;
   margin: 0;
@@ -48,7 +47,17 @@ body {
   font-style: normal;
   line-height: 1;
   position: relative;
-  cursor: default; }
+  cursor: default; 
+  background-image: linear-gradient(to bottom, rgba(26, 26, 26, 0), rgba(26, 26, 26, 0.75)), url("../img/home_bkgd.jpg");
+    background-image: -moz-linear-gradient(top, rgba(26, 26, 26, 0), rgba(26, 26, 26, 0.75)), url("../img/home_bkgd.jpg");
+    background-image: -o-linear-gradient(top, rgba(26, 26, 26, 0), rgba(26, 26, 26, 0.75)), url("../img/home_bkgd.jpg");
+    background-image: -ms-linear-gradient(top, rgba(26, 26, 26, 0), rgba(26, 26, 26, 0.75)), url("../img/home_bkgd.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(26, 26, 26, 0)), to(rgba(26, 26, 26, 0.75))), url("../img/home_bkgd.jpg");
+    background-image: -webkit-linear-gradient(top, rgba(26, 26, 26, 0), rgba(26, 26, 26, 0.75)), url("../img/home_bkgd.jpg");
+  background-size: cover;
+  box-shadow: 1px 0 10px rgba(26, 26, 26, 0.75); /* use box-shadow for transition */
+
+}
 
 a:hover {
   cursor: pointer; }
@@ -522,6 +531,9 @@ select {
   .medium-4 {
     width: 33.33333%; }
 
+  .medium-4pt5 {
+    width: 37.5%; }
+
   .medium-5 {
     width: 41.66667%; }
 
@@ -871,6 +883,9 @@ select {
 
   .large-4 {
     width: 33.33333%; }
+
+  .large-4pt5 {
+      width: 37.5%; }
 
   .large-5 {
     width: 41.66667%; }
@@ -2594,11 +2609,11 @@ td {
 
 /* Default Link Styles */
 a {
-  color: #008cba;
+  color: #fff;
   text-decoration: none;
   line-height: inherit; }
   a:hover, a:focus {
-    color: #0078a0; }
+    color: #99FFCC; }
   a img {
     border: none; }
 
