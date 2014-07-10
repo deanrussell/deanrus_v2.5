@@ -1104,7 +1104,7 @@ button, .button {
   font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
   font-weight: normal;
   line-height: normal;
-  margin: 0 0 1.25rem;
+  margin: 0;
   position: relative;
   text-decoration: none;
   text-align: center;
@@ -1119,6 +1119,34 @@ button, .button {
   border-color: #fff;
   color: white;
   transition: background-color 300ms ease-out; }
+
+/* Button Social */
+
+button, .button.social {
+  border-style: solid;
+  border-width: 2px;
+  cursor: pointer;
+  font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+  font-weight: normal;
+  line-height: normal;
+  margin: 0 0 1.25rem;
+  position: relative;
+  text-decoration: none;
+  text-align: center;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+  display: inline-block;
+  padding-top: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 1;
+  padding-left: 1rem;
+  font-size: 3rem!important;
+  border-color: #fff;
+  color: white;
+  transition: background-color 300ms ease-out; }
+
+/* End Button Social */
+
   button:hover, button:focus, .button:hover, .button:focus {
     background-color: #007095; }
   button:hover, button:focus, .button:hover, .button:focus {
@@ -1164,6 +1192,11 @@ button, .button {
     padding-bottom: 0.4rem;
     padding-left: 0.6rem;
     font-size: 0.6875rem; }
+    button.tiny.social, .button.tiny.social {
+    padding-top: 0.1rem;
+    padding-right: 0.1rem;
+    padding-bottom: 0.1rem;
+    padding-left: 0.1rem; }
   button.expand, .button.expand {
     padding-right: 0;
     padding-left: 0;
@@ -1923,6 +1956,70 @@ meta.foundation-mq-topbar {
   margin-right: 0.625rem; }
   .button-bar .button-group div {
     overflow: hidden; }
+
+/* New Buttons */
+.button-group__social {
+  list-style: none;
+  margin: 0.75rem 0;
+  left: 0; }
+  .button-group__social:before, .button-group__social:after {
+    content: " ";
+    display: table; }
+  .button-group:after {
+    clear: both; }
+  .button-group__social > li {
+    margin: 0 3px;
+    float: left; }
+    .button-group__social > li > button, .button-group__social > li .button {
+      border-left: 1px solid;
+      border-color: rgba(255, 255, 255, 0); }
+
+
+  .button-group__social.round > *:first-child button, .button-group__social.round > *:first-child .button {
+    }
+  .button-group__social.round > *, .button-group__social.round > * > a, .button-group__social.round > * > button, .button-group__social.round > * > .button {
+    border-radius: 100px; }
+
+  .button-group__social.even-6 li {
+    width: 4.25rem; }
+    .button-group__social.even-6 li > button, .button-group__social.even-6 li .button {
+      border-left: 2px solid;
+      border-color: rgba(255, 255, 255, 0.5); }
+    .button-group__social.even-6 li:first-child button, .button-group__social.even-6 li:first-child .button {
+      }
+    .button-group__social.even-6 li button, .button-group__social.even-6 li .button {
+      width: 100%; }
+  /*.button-group.even-7 li {
+    width: 14.28571%; }
+    .button-group.even-7 li > button, .button-group.even-7 li .button {
+      border-left: 1px solid;
+      border-color: rgba(255, 255, 255, 0.5); }
+    .button-group.even-7 li:first-child button, .button-group.even-7 li:first-child .button {
+      border-left: 0; }
+    .button-group.even-7 li button, .button-group.even-7 li .button {
+      width: 100%; }
+  .button-group.even-8 li {
+    width: 12.5%; }
+    .button-group.even-8 li > button, .button-group.even-8 li .button {
+      border-left: 1px solid;
+      border-color: rgba(255, 255, 255, 0.5); }
+    .button-group.even-8 li:first-child button, .button-group.even-8 li:first-child .button {
+      border-left: 0; }
+    .button-group.even-8 li button, .button-group.even-8 li .button {
+      width: 100%; }*/
+
+.button-bar:before, .button-bar:after {
+  content: " ";
+  display: table; }
+.button-bar:after {
+  clear: both; }
+.button-bar .button-group {
+  float: left;
+  margin-right: 0.625rem; }
+  .button-bar .button-group div {
+    overflow: hidden; }
+
+
 
 /* Panels */
 .panel {
