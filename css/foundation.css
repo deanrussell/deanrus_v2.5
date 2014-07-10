@@ -1099,9 +1099,9 @@ select {
     left: auto; } }
 button, .button {
   border-style: solid;
-  border-width: 0px;
+  border-width: 2px;
   cursor: pointer;
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
   font-weight: normal;
   line-height: normal;
   margin: 0 0 1.25rem;
@@ -1115,9 +1115,8 @@ button, .button {
   padding-right: 2rem;
   padding-bottom: 1.0625rem;
   padding-left: 2rem;
-  font-size: 1rem;
-  background-color: #008cba;
-  border-color: #007095;
+  font-size: 1rem!important;
+  border-color: #fff;
   color: white;
   transition: background-color 300ms ease-out; }
   button:hover, button:focus, .button:hover, .button:focus {
@@ -1125,11 +1124,10 @@ button, .button {
   button:hover, button:focus, .button:hover, .button:focus {
     color: white; }
   button.secondary, .button.secondary {
-    background-color: #e7e7e7;
-    border-color: #b9b9b9;
-    color: #333333; }
+    border-color: #fff;
+    color: #fff; }
     button.secondary:hover, button.secondary:focus, .button.secondary:hover, .button.secondary:focus {
-      background-color: #b9b9b9; }
+      background-color: #99FFCC; }
     button.secondary:hover, button.secondary:focus, .button.secondary:hover, .button.secondary:focus {
       color: #333333; }
   button.success, .button.success {
@@ -1161,10 +1159,10 @@ button, .button {
     padding-left: 1.75rem;
     font-size: 0.8125rem; }
   button.tiny, .button.tiny {
-    padding-top: 0.625rem;
-    padding-right: 1.25rem;
-    padding-bottom: 0.6875rem;
-    padding-left: 1.25rem;
+    padding-top: 0.4rem;
+    padding-right: 0.6rem;
+    padding-bottom: 0.4rem;
+    padding-left: 0.6rem;
     font-size: 0.6875rem; }
   button.expand, .button.expand {
     padding-right: 0;
@@ -1808,7 +1806,7 @@ meta.foundation-mq-topbar {
 
 .button-group {
   list-style: none;
-  margin: 0;
+  margin: 0.75rem;
   left: 0; }
   .button-group:before, .button-group:after {
     content: " ";
@@ -1842,7 +1840,7 @@ meta.foundation-mq-topbar {
     border-left: 1px solid;
     border-color: rgba(255, 255, 255, 0.5); }
   .button-group.round > *:first-child button, .button-group.round > *:first-child .button {
-    border-left: 0; }
+    }
   .button-group.round > *, .button-group.round > * > a, .button-group.round > * > button, .button-group.round > * > .button {
     border-radius: 0; }
   .button-group.round > *:first-child, .button-group.round > *:first-child > a, .button-group.round > *:first-child > button, .button-group.round > *:first-child > .button {
@@ -1857,16 +1855,16 @@ meta.foundation-mq-topbar {
       border-left: 1px solid;
       border-color: rgba(255, 255, 255, 0.5); }
     .button-group.even-2 li:first-child button, .button-group.even-2 li:first-child .button {
-      border-left: 0; }
+      }
     .button-group.even-2 li button, .button-group.even-2 li .button {
       width: 100%; }
   .button-group.even-3 li {
     width: 33.33333%; }
     .button-group.even-3 li > button, .button-group.even-3 li .button {
-      border-left: 1px solid;
+      border-left: 2px solid;
       border-color: rgba(255, 255, 255, 0.5); }
     .button-group.even-3 li:first-child button, .button-group.even-3 li:first-child .button {
-      border-left: 0; }
+      }
     .button-group.even-3 li button, .button-group.even-3 li .button {
       width: 100%; }
   .button-group.even-4 li {
@@ -1890,10 +1888,10 @@ meta.foundation-mq-topbar {
   .button-group.even-6 li {
     width: 16.66667%; }
     .button-group.even-6 li > button, .button-group.even-6 li .button {
-      border-left: 1px solid;
+      border-left: 2px solid;
       border-color: rgba(255, 255, 255, 0.5); }
     .button-group.even-6 li:first-child button, .button-group.even-6 li:first-child .button {
-      border-left: 0; }
+      }
     .button-group.even-6 li button, .button-group.even-6 li .button {
       width: 100%; }
   .button-group.even-7 li {
@@ -2613,7 +2611,9 @@ a {
   text-decoration: none;
   line-height: inherit; }
   a:hover, a:focus {
-    color: #99FFCC; }
+    color: #99FFCC;
+    text-shadow: 0px 1px 5px rgba(255, 255, 255, 0.5)!important;
+  }
   a img {
     border: none; }
 
@@ -2640,8 +2640,8 @@ h1, h2, h3, h4, h5, h6 {
   font-style: normal;
   color: #222222;
   text-rendering: optimizeLegibility;
-  margin-top: 0.2rem;
-  margin-bottom: 0.5rem;
+  margin-top: 0.1rem;
+  margin-bottom: 0.2rem;
   line-height: 1.4; }
   h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
     font-size: 60%;
@@ -2649,7 +2649,7 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 0; }
 
 h1 {
-  font-size: 2.125rem; }
+  font-size: 2.5rem; }
 
 h2 {
   font-size: 1.6875rem; }
@@ -2674,10 +2674,10 @@ h6 {
   margin-bottom: 0.5rem; }
 
 hr {
-  border: solid #dddddd;
-  border-width: 1px 0 0;
+  border: solid #fff;
+  border-width: 1.5px 0 0;
   clear: both;
-  margin: 1.25rem 0 1.1875rem;
+  margin: 0.6rem 0 0rem 0;
   height: 0; }
 
 /* Helpful Typography Defaults */
@@ -2813,10 +2813,10 @@ blockquote p {
     line-height: 1.4; }
 
   h1 {
-    font-size: 2.75rem; }
+    font-size: 4rem; }
 
   h2 {
-    font-size: 2.3125rem; }
+    font-size: 2.5rem; }
 
   h3 {
     font-size: 1.6875rem; }

@@ -1,7 +1,6 @@
-body, h1, h2, h3, h4, h5, h6, p, a {
-	font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+body, h1, h2, h3, h4, h5, h6, p, a, ul, li {
+	font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif!important;
 	color: #fff;
-	min-width: 320px;
 }
 
 div.cover__top01 {
@@ -23,6 +22,8 @@ div.cover__top02 {
 
 .small-6 .cover__icon {
 	max-height: 184px;
-	min-height: 150px;
-	min-width:  150px;
+	min-height: 125px;
+	min-width:  125px;
 }
+
+
