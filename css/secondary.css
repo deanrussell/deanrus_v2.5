@@ -48,6 +48,8 @@ div.icon-bar > * {
 	border-radius: 100px;
 }
 
+/* need to space out */
+
 div.icon-bar > * i {
 	font-size: 1.9rem;
 }
