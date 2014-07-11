@@ -7,10 +7,6 @@ div.cover__top01 {
 	height: 50px;
 }
 
-div.cover__top02 {
-	height: 30%;
-}
-
 .cover__icon {
 	border: 3px solid #1A6666;
 	border-radius: 100%;
@@ -26,5 +22,33 @@ div.cover__top02 {
 	min-width:  125px;
 }
 
-.all-button {
+footer {
+	background-color: #333333;
+	height: 100%;
+	transition: background 300ms ease;
+  	box-shadow: -4px 0 4px rgba(0, 0, 0, 0.5), 4px 0 4px rgba(0, 0, 0, 0.5);
+  	display: block;
+  	position: absolute;
 }
+
+div.icon-bar > *:hover {
+	background: #99FFCC;
+}
+
+div.icon-bar > *:hover i, div.icon-bar > *:hover label {
+	color: #333333!important;
+}
+
+div.foot_01 {
+	height: 2rem;
+}
+
+div.icon-bar > * {
+	width:auto;
+	border-radius: 100px;
+}
+
+div.icon-bar > * i {
+	font-size: 1.9rem;
+}
+div.icon-bar > * 

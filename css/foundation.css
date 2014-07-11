@@ -47,7 +47,8 @@ body {
   font-style: normal;
   line-height: 1;
   position: relative;
-  cursor: default; 
+  cursor: default; }
+.page {
   background-image: linear-gradient(to bottom, rgba(26, 26, 26, 0), rgba(26, 26, 26, 0.75)), url("../img/home_bkgd.jpg");
     background-image: -moz-linear-gradient(top, rgba(26, 26, 26, 0), rgba(26, 26, 26, 0.75)), url("../img/home_bkgd.jpg");
     background-image: -o-linear-gradient(top, rgba(26, 26, 26, 0), rgba(26, 26, 26, 0.75)), url("../img/home_bkgd.jpg");
@@ -55,9 +56,8 @@ body {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(26, 26, 26, 0)), to(rgba(26, 26, 26, 0.75))), url("../img/home_bkgd.jpg");
     background-image: -webkit-linear-gradient(top, rgba(26, 26, 26, 0), rgba(26, 26, 26, 0.75)), url("../img/home_bkgd.jpg");
   background-size: cover;
-  box-shadow: 1px 0 10px rgba(26, 26, 26, 0.75); /* use box-shadow for transition */
-
-}
+  box-shadow: 1px 0 10px rgba(26, 26, 26, 0.75); /* use box-shadow for transition */ 
+  height: 100%; }
 
 a:hover {
   cursor: pointer; }
@@ -3982,7 +3982,7 @@ dialog[open] {
 
 .left-off-canvas-menu {
   -webkit-backface-visibility: hidden;
-  width: 15.625rem;
+  width: 60%;
   top: 0;
   bottom: 0;
   position: absolute;
@@ -4004,7 +4004,7 @@ dialog[open] {
 
 .right-off-canvas-menu {
   -webkit-backface-visibility: hidden;
-  width: 15.625rem;
+  width: 50%;
   top: 0;
   bottom: 0;
   position: absolute;
@@ -4049,12 +4049,12 @@ ul.off-canvas-list {
       background: #242424; }
 
 .move-right > .inner-wrap {
-  -ms-transform: translate(15.625rem, 0);
-  -webkit-transform: translate3d(15.625rem, 0, 0);
-  -moz-transform: translate3d(15.625rem, 0, 0);
-  -ms-transform: translate3d(15.625rem, 0, 0);
-  -o-transform: translate3d(15.625rem, 0, 0);
-  transform: translate3d(15.625rem, 0, 0); }
+  -ms-transform: translate(60%, 0);
+  -webkit-transform: translate3d(60%, 0, 0);
+  -moz-transform: translate3d(60%, 0, 0);
+  -ms-transform: translate3d(60%, 0, 0);
+  -o-transform: translate3d(60%, 0, 0);
+  transform: translate3d(60%, 0, 0); }
 .move-right .exit-off-canvas {
   -webkit-backface-visibility: hidden;
   transition: background 300ms ease;
@@ -4074,12 +4074,12 @@ ul.off-canvas-list {
       background: rgba(255, 255, 255, 0.05); } }
 
 .move-left > .inner-wrap {
-  -ms-transform: translate(-15.625rem, 0);
-  -webkit-transform: translate3d(-15.625rem, 0, 0);
-  -moz-transform: translate3d(-15.625rem, 0, 0);
-  -ms-transform: translate3d(-15.625rem, 0, 0);
-  -o-transform: translate3d(-15.625rem, 0, 0);
-  transform: translate3d(-15.625rem, 0, 0); }
+  -ms-transform: translate(-50%, 0);
+  -webkit-transform: translate3d(-50%, 0, 0);
+  -moz-transform: translate3d(-50%, 0, 0);
+  -ms-transform: translate3d(-50%, 0, 0);
+  -o-transform: translate3d(-50%, 0, 0);
+  transform: translate3d(-50%, 0, 0); }
 .move-left .exit-off-canvas {
   -webkit-backface-visibility: hidden;
   transition: background 300ms ease;
@@ -4098,7 +4098,7 @@ ul.off-canvas-list {
     .move-left .exit-off-canvas:hover {
       background: rgba(255, 255, 255, 0.05); } }
 
-.offcanvas-overlap .left-off-canvas-menu, .offcanvas-overlap .right-off-canvas-menu {
+.offcanvas-overlap .left-off-canvas-menu, .offcanvas-overlap .right-off-canvas-menu, .offcanvas-overlap .bottom-off-canvas-menu {
   -ms-transform: none;
   -webkit-transform: none;
   -moz-transform: none;
