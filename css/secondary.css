@@ -53,4 +53,7 @@ div.icon-bar > * {
 div.icon-bar > * i {
 	font-size: 1.9rem;
 }
-div.icon-bar > * 
+
+.row {
+	max-width: none;
+}
