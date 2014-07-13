@@ -3,6 +3,12 @@ body, h1, h2, h3, h4, h5, h6, p, a, ul, li {
 	color: #fff;
 }
 
+a.teal_link {
+	color: #99FFCC!important;
+}
+
+/*MAIN COVER*/
+
 div.cover__top01 {
 	height: 50px;
 }
@@ -22,7 +28,9 @@ div.cover__top01 {
 	min-width:  125px;
 }
 
-footer {
+/*ICON BOTTOM TAB*/
+
+/*footer {
 	background-color: #333333;
 	height: 100%;
 	transition: background 300ms ease;
@@ -48,12 +56,99 @@ div.icon-bar > * {
 	border-radius: 100px;
 }
 
-/* need to space out */
-
 div.icon-bar > * i {
 	font-size: 1.9rem;
 }
 
 .row {
 	max-width: none;
+}*/
+
+
+/*LEFT OFF-CANVAS TABS*/
+.tablink .left-menu-tab {
+	transition: background-color 300ms ease-out;
+}
+
+
+.tablink:hover .left-menu-tab {
+	background-color: #99FFCC!important;
+}
+
+.tablink:hover .left-menu-tab div {
+	color: #333333!important;
+}
+
+.left-menu-tab {
+  -webkit-backface-visibility: hidden;
+  width: 10%;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  background: #1A6666;
+  z-index: 2002;
+  left: 100%;
+  -webkit-box-shadow: -5px 0px 5px 0px #2B2B2B;
+	-moz-box-shadow: -5px 0px 5px 0px #2B2B2B;
+	box-shadow: -5px 0px 5px 0px #2B2B2B; }
+
+.left-menu-tab div {
+	color: #99FFCC;
+}
+
+/*SMARTPHONE*/
+
+@media only screen {
+	.move-right > .inner-wrap {
+		-ms-transform: translate(100%, 0);
+		-webkit-transform: translate3d(100%, 0, 0);
+		-moz-transform: translate3d(100%, 0, 0);
+		-ms-transform: translate3d(100%, 0, 0);
+		-o-transform: translate3d(100%, 0, 0);
+		transform: translate3d(100%, 0, 0); }
+	.left-off-canvas-menu {
+		width: 100%; }
+	.left-menu-tab {
+		width: 2rem;
+		padding-top: 65%; }
+	}
+	.left-menu-tab div {
+		margin-left:6px;
+		font-size: 2.5rem; }
+
+	.tablink:active .left-menu-tab {
+		background-color: #99FFCC!important; }
+
+	.tablink:active .left-menu-tab div {
+		color: #333333!important; }
+
+	.about p {
+		font-size: 2rem;
+		padding: 1rem 5px 0;
+		line-height: 2rem;
+		margin: 0 2rem; }
+
+	p.about_txt2 {
+		padding-top: 0.75rem;
+		margin-left: 0px;
+	}
+
+	.abt_sm {
+		font-size: 1.75rem;
+		line-height: 1.75rem;
+	}
+	.abt_med {
+		font-size: 2.25rem;
+		line-height: 2.25rem;
+	}
+	.abt_lg {
+		font-size: 2.5rem;
+		line-height: 2.5rem;
+	}
+
+	.abt_xlg {
+		font-size: 3.25rem;
+		line-height: 3.25rem;
+	}
+
 }
