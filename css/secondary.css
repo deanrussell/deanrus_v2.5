@@ -123,13 +123,13 @@ div.icon-bar > * i {
 		color: #333333!important; }
 
 	.about p {
-		font-size: 2rem;
+		font-size: 1.75rem;
 		padding: 1rem 5px 0;
-		line-height: 2rem;
-		margin: 0 2rem; }
+		line-height: 1.75rem;
+		margin: 0 2rem 0; }
 
 	p.about_txt2 {
-		padding-top: 0.75rem;
+		padding-top: 1.75rem;
 		margin-left: 0px;
 	}
 
@@ -150,5 +150,6 @@ div.icon-bar > * i {
 		font-size: 3.25rem;
 		line-height: 3.25rem;
 	}
-
+	.text-center1 {
+	text-align: center!important; }
 }
